@@ -1,0 +1,165 @@
+WpfClockApp Changes
+
+WpfClock v0.2b
+  Fixed bug: AlwaysOnTop couldn't be disabled
+  Added code to position About box near clock window
+  Improved code to dynamically resize window and controls
+
+WpfClock v0.2c
+  Added embedded fonts
+  Modified XAML to use 2 of the fonts (7-segment for the time, 14-segment for the date)
+  Removed support for /t command-line switch temporarily
+  Added experimental code for determing needed control dimensions for the fonts selected for each control
+
+WpfClock v0.2d
+  Restored icon that got lost in a recent revision
+  Installed modified 14-segment italic fonts for date & time
+  Removed unused fonts
+  Restored call to ShowTime () on startup to hide test text
+  Added code to show & hide seconds
+  Added code to save & load show-seconds setting
+  Contains much experimental string-measuring code not yet functional
+
+WpfClock v0.2g
+  Removed test code & non-functioning string dimension calculating code
+  Made label controls clickable (like "see-through" setting)
+  Widened gap between day and date in ISO date display
+
+WpfClock v0.2h
+  Added code to calculate string width of time without seconds
+  Added code to resize window width based on date & time string lengths
+  Added code to resize window height based on date format selection
+  Added code to resize window on <ctrl>-s keystroke as well as menu
+  Added code to insert spaces in ISO string equivalent to the width of "W"
+
+WpfClock v0.2i
+  Fixed issue: window moves to the right each shutdown/startup cycle
+
+WpfClock v0.2j
+  Fixed issue: window-centering logic had been disabled in previous fix
+
+WpfClock v0.2k
+  Reposition controls on canvas; placement better for 14-segment font
+
+WpfClock v0.2l
+  Added "ISO 8601" w/ & w/o day of week menu entries
+
+WpfClock v0.2m
+  Added "<ctrl>-S" & "<ctrl>-T" text to context menu
+  Added code to maintain position at top of window
+  Added code to increase space between day of week and calendar date in "Short" date format
+  Added code to update date on OS awakening from sleep
+
+WpfClock v0.2n
+  Added code to limit to single instance
+
+WpfClock v0.2o
+  Added code to activate first instance if /m switch not used
+  Fixed issues when starting up w/long date format:
+    Moves window to the left from where it was before shutting down
+    Year appears late
+    Time is left aligned then shifts to center
+
+WpfClock v0.2p
+  Added code to disable always-on-top logic when screensaver is running
+  Created x64 build configuration to support process enumeration
+
+WpfClock v0.2q
+  Added code to save settings when computer goes to sleep
+  Added code to programatically adjust rounding values
+  Added code to save and restore corner radius values
+
+WpfClock v0.2r
+  Cleaned up loose ends in code to change corner radius values
+  Added code to resize the window in long-date mode and the day changes
+  Added code to keep window at top of screen if top == 0
+  Fixed issue: switching to Glass mode failed to account for border thickness in determining window position
+  Added code to cycle through all date modes on <ctrl>-D
+
+WpfClock v0.2s
+  Added code to cycle through all display modes on <ctrl>-D
+  Added code to hide on <ctrl>-H and un-hide on window activation (by running app in another process without /m command-line switch)
+  Added code to make click-through make child controls click-through
+
+WpfClock v0.2.1.20
+  Added code to extract About box info directly from assembly attributes
+
+WpfClock v0.2.1.21
+  Added code to restore hidden window with /m command line switch
+  Added code to keep window within monitor boundaries on multi-monitor system
+
+WpfClock v0.2.1.22
+  Added code to maintain edge positions with changing border thickness
+  Cleaned up title bar display code
+
+WpfClock v0.2.1.23
+  Added MouseEnter and MouseLeave event handlers for time and date labels to change background when mouse hovers over either control
+  Simplified code that sets border thickness
+  Added menu item to toggle mouse-over action
+  Added code to persist mouse-over setting
+
+WpfClock v0.2.1.24
+  Changed main window control from Canvas to StackPanel with auto sizing
+  Added code to properly maintain window position on monitor edges when Date or Time format is changed
+
+WpfClock v0.2.1.25
+  Added code to maintain center position when date format changes
+  Added code to load embedded icon resource
+  Added code to create system tray icon and display it when main window hidden
+  Added code to restore main window and hide systray icon when systray icon clicked
+  Moved code to load assembly version data from CAboutBox to CMainWindow
+
+WpfClock v0.2.1.26
+  Added code to suppress tray icon flicker
+  Added code to maintain window center position on repeated date format changes
+
+WpfClock v0.2.1.27
+  Added code to toggle showing taskbar icon
+  Added code to persiste taskbar icon setting
+
+WpfClock v0.2.1.28
+  Cleaned up menu
+  Cleaned up title bar code some
+  Added code to automatically resize window in title-bar mode when changing date and time formats
+  Added code to enumerate and load embedded fonts
+
+WpfClock v0.2.1.29
+  Added code to select font style from menu
+  Added code to persist font style selection
+  Added code to select embedded font from menu
+  Added code to persist embedded font selection
+  Added code to select system font from menu
+  Added code to persist system font selection
+
+WpfClock v0.3.0.0
+  Added colors menu with foreground and background menus populated with all colors listed in System.Windows.Media.Brushes enumeration
+  Added code to select foreground and background colors
+  Added code to persist color selections
+
+WpfClock v0.3.0.01
+  Changed code to support background color in both titlebar and borderless display modes
+  Replaced /t sequences with InputGestureText attributes in XAML
+  Added code to show font names in the font image
+
+WpfClock v0.3.0.02
+  Added code to specifically color fonts black or white for selected color names
+  Added code to exclude selected fonts inappropriate for display
+
+WpfClock v0.3.0.03
+  Changed "Display" menu items to stay open after click
+  Added code to allow setting font size for both time and date
+  Added code persist font size settings
+
+WpfClock v0.3.0.04
+  Changed "Date Format" menu items to stay open after click
+  Fixed issue: Added code to trim leading and trailing spaces from long-format date when copying to clipboard
+  Added code to map <ctrl>-C to "Copy both to clipboard"
+
+WpfClock v0.3.0.05
+  Added "Hide Window / <ctrl>H" menu item to supplement ctrl-H hotkey
+  Changed menu to show "<ctrl>D" for all Date Format menu items and in the parent group menu
+  Changed menu to show "<ctrl>P" for all Display Mode menu items and in the parent group menu
+  Deleted "Colors" parent menu and move Foreground and Background color parent menus to main contect menu
+
+WpfClock v0.3.0.06
+  Added code to restore the date and time formats in use prior to switching to the 7-segment font.
