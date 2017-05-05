@@ -164,3 +164,9 @@ WpfClock v0.3.0.05
 WpfClock v0.3.0.06
   Added code to restore the date and time formats in use prior to switching to the 7-segment font.
   Added code to separate words in color names with spaces
+
+WpfClock v0.3.0.07
+  Replaced discreet background brushes with code to change background opacity
+
+WpfClock v0.3.0.09
+  Fixed issue: Expanded color names used to create brushes instead of the compressed color names defined in WPF
