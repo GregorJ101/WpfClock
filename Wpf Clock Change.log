@@ -170,3 +170,81 @@ WpfClock v0.3.0.07
 
 WpfClock v0.3.0.09
   Fixed issue: Expanded color names used to create brushes instead of the compressed color names defined in WPF
+
+WpfClock - 2017-05-07 v0.3.0.10
+  Successfully integrated Petzold analog clock
+
+WpfClock - 2017-05-07 v0.3.0.11
+  Completely overhauled and reorganized menu
+  Removed support for clock background and outline temporarily
+  Added menuitems and supporting code for:
+    Setting colors on all clock UI elements
+    Showing and hiding minute & hour marks
+    Showing and hiding second hand
+    Selecting linear or stepped second hand
+    Closing app without saving settings
+
+WpfClock - 2017-05-08 v0.3.0.12
+  Added code to show "Digital", "Analog", or both in systray tooltip text
+  Added code to suppress clock outline and supporting menu items
+
+WpfClock - 2017-05-08 v0.3.0.14
+  Added save and restore code for Clock selection setting
+  Added save and restore code for Stepped second-hand setting
+  Added save and restore code for Show minute marks setting
+  Added save and restore code for Show hour marks setting
+  Added save and restore code for Show clock border setting
+  Added save and restore code for Clock face opacity setting
+
+WpfClock - 2017-05-08 v0.3.0.15
+  Added code to save and restore all 8 new color selections
+  Fixed an issue: OnMouseLeave () was resetting background opacity to 0.01 regardless of what the setting was before
+
+WpfClock - 2017-05-09 v0.3.0.16
+  Added menuitems and code to create, update, load, and delete themes
+  Added code to load theme specified in command line
+
+WpfClock - 2017-05-10 v0.3.0.17
+  Added menuitem and code for selecting second hand color
+  Added code to prevent window from being maximized
+  Added code to keep About box and New Theme Name dialog box from straddling screens in multi-monitor systems
+  Updated "usage" screen w/ "/l" option for loading saved themes
+  Fixed issue: no exit after closing "usage" screen
+
+WpfClock - 2017-05-11 v0.3.0.18
+  Added menuitem and code to restore settings from registry
+  Disabled mouse-over in click-through mode
+
+WpfClock - 2017-05-13 v0.3.0.19
+  Made menuitem for color of second hand visible only for the analog clock
+  Revised default settings:
+    Border thickness 1
+    Corner radius 8
+    Draggable True
+  Made time and date labels click-through
+  Temporarily disabled Aero Glass display mode
+
+WpfClock - 2017-05-18 v0.3.0.21
+  Added menuitem and code to implement starting on system startup and to remove the startup registry entry on command and on uninstall
+  Added code to initialize in see-through display mode when saved settings specify Aero Glass and Aero Glass is not enabled
+  Replaced code that collapsed unavailble menuitems with code to disable
+  Made "Restore Saved Settings", "Save Settings", and "Close App", and "Save changed theme" conditioned by dirty flag
+  Added menuitem and code to implement round border
+  Removed limit on corner radius
+  Added member CornerRadius instance to replace all new CornerRadius calls
+  Made Topmost, Draggable, and RoundBorder set dirty flag
+  Added code to persist and restore RoundBorder setting
+  Added member CornerRadius instance to replace all new CornerRadius calls
+  Added member Thickness instance to replace all new Thickness calls
+  Added code to remove "Sacred Cat Software" key in registry
+
+WpfClock - 2017-05-19 v0.3.0.22
+  Added /l"<theme name>" to startup string
+  Added "Restore Theme" menuitem and supporting code
+  Removed dirty-flag tracking code; save/restore items now always enabled
+  Added code to check theme in use in "Load Themes" & "Delete Themes"
+
+WpfClock - 2017-05-19 v0.4.0.01
+  Removed mention of /t command line switch from Usage box
+  Disabled parsing of /t command line switch
+  Added more fonts to the excluded-fonts list
