@@ -248,3 +248,6 @@ WpfClock - 2017-05-19 v0.4.0.01
   Removed mention of /t command line switch from Usage box
   Disabled parsing of /t command line switch
   Added more fonts to the excluded-fonts list
+
+WpfClock - 2017-05-21 v0.4.0.03
+  Improved synching of analog clock with system time
