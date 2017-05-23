@@ -255,3 +255,7 @@ WpfClock - 2017-05-21 v0.4.0.03
 WpfClock - 2017-05-22 v0.4.0.04
   Removed support for both analog and digital clocks together until both can be kept in sync.
   
+WpfClock - 2017-05-23 v0.4.0.05
+  Added code to convert RGB to HSI
+  Added code to sort color menu by hue, brightmess, and saturation
+  Added code to select sorting by HSI or color name
