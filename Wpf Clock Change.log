@@ -259,3 +259,6 @@ WpfClock - 2017-05-23 v0.4.0.05
   Added code to convert RGB to HSI
   Added code to sort color menu by hue, brightmess, and saturation
   Added code to select sorting by HSI or color name
+
+WpfClock - 2017-06-12 v0.4.0.07
+  Added test for .NET Framework 4.5, required for execution
